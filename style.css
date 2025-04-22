@@ -1,17 +1,62 @@
+/* Imagem de fundo e reset geral */
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: url("banner.jpg") no-repeat center center fixed;
+  background-image: url("banner.jpg");
   background-size: cover;
-  color: #000;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-/* Caixa centralizada */
+/* Painel branco por cima da imagem */
 .container {
-  background: rgba(255, 255, 255, 0.8); /* branco transparente */
-  max-width: 600px;
-  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.9); /* branco com leve transparência */
   padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 0
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+}
+
+/* Título */
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Inputs, botões, select */
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+}
+
+/* Botão */
+button {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #555;
+}
+
+/* Resultado */
+#resultado {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #111;
+}
