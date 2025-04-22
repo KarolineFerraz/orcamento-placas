@@ -1,18 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Orçamento de Placas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
   <div class="container">
     <h1>Simulador de Orçamento de Placas</h1>
-    <label>Largura (m): <input type="number" id="largura"></label>
-    <label>Altura (m): <input type="number" id="altura"></label>
-    <label>Tipo de Placa:
-      <select id="tipo">
-        <option value="acrilico">Acrílico</option>
-        <option value="acm">ACM</option>
-        <option value="lona">Lona</option>
-      </select>
+    <label>Largura (m):</label>
+    <input type="number" id="largura" placeholder="Ex: 1.2">
+    
+    <label>Altura (m):</label>
+    <input type="number" id="altura" placeholder="Ex: 0.8">
+    
+    <label>Tipo de Placa:</label>
+    <select id="tipo">
+      <option value="acrilico">Acrílico</option>
+      <option value="acm">ACM</option>
+      <option value="lona">Lona</option>
+    </select>
+    
+    <label>
+      <input type="checkbox" id="led"> Iluminação LED (R$30)
     </label>
-    <label><input type="checkbox" id="led"> Iluminação LED (R$30)</label>
+    
     <button onclick="calcular()">Calcular Orçamento</button>
     <h2 id="resultado"></h2>
   </div>
+
   <script src="script.js"></script>
 </body>
+</html>
